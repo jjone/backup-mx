@@ -9,7 +9,7 @@ This image allows you to run POSTFIX internally inside your docker installation.
 
 To run the container, do the following:
 ```
-docker run --rm --name backup-mx -e "HOSTNAME=mx2.example.com -e DOMAINS=example.com,example2.com" -p 25:25 numero33/backup-mx
+docker run --rm --name backup-mx -e "HOSTNAME=mx2.example.com" -e "DOMAINS=example.com,example2.com" -p 25:25 numero33/backup-mx
 ```
 
 ## Configuration options
